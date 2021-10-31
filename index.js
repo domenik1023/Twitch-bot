@@ -18,36 +18,18 @@ client.connect();
 
 client.on('message', (channel, tags, message, self) => {
   if (self) return;
-  if (tags['display-name'] == 'teamspeak_tv')
+  if (tags['display-name'] == 'teamspeak_tv' || tags['display-name'] == 'viantes' || tags['display-name'] == 'soraundshiro' || tags['display-name'] == 'funnysbanana' || tags['display-name'] == 'domenik1023')
     {
       client.say(channel, '!redeem');
       console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
       console.log(`[${channel}]: domenik1024: !redeem || Send!`)
     }
-    else if(tags['display-name'] == 'viantes')
+    /*else if(tags['display-name'] == 'domenik1023')
     {
       client.say(channel, '!redeem');
       console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
       console.log(`[${channel}]: domenik1024: !redeem || Send!`)
-    }
-    else if(tags['display-name'] == 'soraundshiro')
-    {
-      client.say(channel, '!redeem');
-      console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
-      console.log(`[${channel}]: domenik1024: !redeem || Send!`)
-    }
-    else if(tags['display-name'] == 'funnysbanana')
-    {
-      client.say(channel, '!redeem');
-      console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
-      console.log(`[${channel}]: domenik1024: !redeem || Send!`)
-    }
-    else if(tags['display-name'] == 'domenik1023')
-    {
-      client.say(channel, '!redeem');
-      console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
-      console.log(`[${channel}]: domenik1024: !redeem || Send!`)
-    }
+    }*/
     else
     {
     }
