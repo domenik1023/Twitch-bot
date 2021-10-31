@@ -18,7 +18,7 @@ client.connect();
 
 client.on('message', (channel, tags, message, self) => {
   if (self) return;
-  if (tags['display-name'] == 'teamspeak_tv' || tags['display-name'] == 'viantes' || tags['display-name'] == 'soraundshiro' || tags['display-name'] == 'funnysbanana' || tags['display-name'] == 'domenik1023')
+  if (tags['display-name'] == 'TeamSpeak_TV' || tags['display-name'] == 'Viantes' || tags['display-name'] == 'soraundshiro' || tags['display-name'] == 'FunnysBanana' || tags['display-name'] == 'domenik1023' || tags['display-name'] == 'bananasboti' || tags['display-name'] == 'PlatinCasino140')
     {
       client.say(channel, '!redeem');
       console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
