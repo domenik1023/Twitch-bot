@@ -24,13 +24,8 @@ client.on('message', (channel, tags, message, self) => {
       console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
       console.log(`[${channel}]: domenik1024: !redeem || Send!`)
     }
-    /*else if(tags['display-name'] == 'domenik1023')
-    {
-      client.say(channel, '!redeem');
-      console.log(`[${channel}]: ${tags['display-name']}: ${message}`);
-      console.log(`[${channel}]: domenik1024: !redeem || Send!`)
-    }*/
     else
     {
     }
+    
 });
